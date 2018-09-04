@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center mt-5">
+        <h1>Test Socket.io</h1>
+        <h3>Python + Flask</h3>
+
+        <div class="form-group mt-3">
+          <input type="text" class="form-control" id="name" placeholder="Whats is your name?">
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="btn_send">Send</button>
+
+        <div class="alert alert-success mt-3 hide" role="alert" id="alert"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="{{url_for('static', filename='js/socket.io.js')}}"></script>
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
